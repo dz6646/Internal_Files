@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/**
+ * The type Credits.
+ */
 public class Credits extends AppCompatActivity {
 
     @Override

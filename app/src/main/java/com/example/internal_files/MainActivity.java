@@ -20,12 +20,27 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * The Input.
+     */
     EditText input;
+    /**
+     * The Show me that dorel.
+     */
     TextView showMeThatDorel;
+    /**
+     * The Filename.
+     */
     final String FILENAME = "text.txt";
 
+    /**
+     * The Si.
+     */
     Intent si;
 
     @Override
@@ -55,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Add text.
+     * This function is the onClick function of the button "SAVE" it will save the text into the file
+     * @param view the view
+     */
     public void addText(View view) {
         try
         {
@@ -75,6 +95,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Read file string.
+     * This function will read the file and return a string with it's contents
+     * @return the contents of the file
+     */
     public String readFile()
     {
         try
@@ -100,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Create file.
+     * This function will make sure that there is a file on the device
+     */
     public void createFile()
     {
         try
@@ -113,6 +142,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Reset file.
+     * This function will reset all the contents of the file
+     * @param view the view
+     */
     public void resetFile(View view) {
         try
         {
@@ -125,6 +159,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Exit.
+     * This function will update the file and finish the program
+     * @param view the view
+     */
     public void exit(View view) {
         try {
             String strwr = input.getText().toString();
